@@ -99,6 +99,12 @@ footer {
 #corgi_image{
   width: 170px;
 }
+
+.body{fill:#52595F;}
+.nose_and_eyes{fill:#2D3339;}
+.brows{fill:#DA8058;}
+.white{fill:#FBFEFF;}
+
 @media (min-width: 425px){
   #container {
     width: 85%;
