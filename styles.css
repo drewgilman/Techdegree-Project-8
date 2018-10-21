@@ -1,6 +1,4 @@
-/* *{
-  border: 1px red solid;
-} */
+
 body {
   margin: 0;
   padding: 0;
@@ -37,8 +35,8 @@ a {
 }
 
 a:hover {
-  color: #111;
-  fill:#111;
+  color: #3388a2;
+  fill: #3388a2;
 }
 
 
@@ -76,12 +74,18 @@ footer {
   color: #ba8058;
 }
 
+a:hover .nav_icon{
+  transform: rotate(-15deg) scale(1.1);
+
+}
+
 /* --------------------------
   NAV and HEADER
 --------------------------- */
 .nav_icon{
   display: inline-block;
   margin-right: .33em;
+  transition: transform .3s ease;
 
 }
 .icon {
