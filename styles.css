@@ -1,3 +1,6 @@
+/* *{
+  border: 1px red solid;
+} */
 body {
   margin: 0;
   padding: 0;
@@ -72,6 +75,10 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+/* --------------------------
+  NAV and HEADER
+--------------------------- */
 .nav_icon{
   display: inline-block;
   margin-right: .33em;
@@ -86,6 +93,7 @@ footer {
 .logo {
   width: 140px;
   height: 120px;
+  overflow: visible;
 }
 .st1{
   display: none;
@@ -93,18 +101,80 @@ footer {
 
 .logo_text{
   color: #EAAA7F;
+}
+.paw_print{
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+.paw_text{
+  transform-origin: 50% 85%;
+  transform-box: fill-box;
+}
+
+.logo:hover .paw_print{
+  animation: highFive 1s cubic-bezier(1,-0.38,.28,1.35) forwards;
+}
+.logo:hover .paw_text{
+  animation: highFiveText 1s cubic-bezier(1,-0.38,.28,1.35) forwards;
+}
+
+
+
+  /* --------------------------
+    Corgi SVGs
+  --------------------------- */
+
+
+.corgi_faces{
+  display: inline-block;
+  margin: 0 .5em;
+}
+.corgi_colors{
+  text-align: left;
+  padding-left: 2.5em;
+  margin-top: -.25em;
+  color: #ba8058;
+
+}
+.sable{
+  color:#b97f5b;
+}
+.fawn{
+  color: #e9aa82;
+}
+.red{
+  color: #834b29;
+}
+.stone{
+
+  color: #52595F;
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes highFive {
+  0%{
+    transform: scale(0) rotate(15deg);
+
+  }
+  80% {
+    transform: scale(1.1) rotate(-15deg);
+  }
 
 }
 
-#corgi_image{
-  width: 170px;
+@keyframes highFiveText {
+
+  80% {
+    transform: rotate(25deg);
+  }
+
 }
 
-.body{fill:#52595F;}
-.nose_and_eyes{fill:#2D3339;}
-.brows{fill:#DA8058;}
-.white{fill:#FBFEFF;}
-
+/* --------------------------
+MEDIA QUERIES
+--------------------------- */
 @media (min-width: 425px){
   #container {
     width: 85%;
