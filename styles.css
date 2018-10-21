@@ -74,10 +74,7 @@ footer {
   color: #ba8058;
 }
 
-a:hover .nav_icon{
-  transform: rotate(-15deg) scale(1.1);
 
-}
 
 /* --------------------------
   NAV and HEADER
@@ -86,12 +83,15 @@ a:hover .nav_icon{
   display: inline-block;
   margin-right: .33em;
   transition: transform .3s ease;
+}
+
+a:hover .nav_icon{
+  transform: rotate(-15deg) scale(1.1);
 
 }
 .icon {
   display: block;
   margin: 1em;
-
 }
 
 .logo {
@@ -121,8 +121,6 @@ a:hover .nav_icon{
 .logo:hover .paw_text{
   animation: highFiveText 1s cubic-bezier(1,-0.38,.28,1.35) forwards;
 }
-
-
 
   /* --------------------------
     Corgi SVGs
